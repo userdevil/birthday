@@ -17,7 +17,7 @@ def gen():
     if request.method == 'POST':
         name = request.form.get('user_url')
         uname = request.form.get('ser')
-        return render_template('index.html',name = name ,uname = uname)
+        return render_template('card.html',name = name ,uname = uname)
 
 @app.route('/day/', methods=['GET'])
 def user_encode():
